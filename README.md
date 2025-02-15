@@ -7,3 +7,5 @@ The Waterfall Development Model was used to guide the project through planning, 
 The frontend was built using HTML, CSS, and JavaScript, while the backend database was developed with PHP and MySQL. The project underwent rigorous unit, integration, and user acceptance testing to validate system functionality and security.
 Beyond technical implementation, "FootieFriends" fosters community-building and reduces financial barriers to sports participation through a pay-as-you-go model. 
 Future scalability includes mobile app development and AI-powered game recommendations. This report evaluates the project’s technical execution, societal impact, and potential for further expansion, demonstrating how "FootieFriends" bridges the gap between casual football enthusiasts and accessible game opportunities.
+
+Attached are code files that were used to compile the webpage. In addition, Project Artefact word document is attached which contains snippets and screenshots of all webside pages, PHPMyAdmin database and HTML/CSS/JavaScript/PHP code snippets (The project Artefact was submitted originally as part of the Full Projet Report).
