@@ -1,0 +1,62 @@
+Login.html
+
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FootieFriends - Play Football with Friends</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    </head>
+ <body>
+    <header>
+        <div class="header-content">
+            <img src="https://i.ibb.co/CnQDn6N/footiefriends-logo.png" alt="FootieFriends Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="./index.html#about">About Us</a></li>
+                    <li><a href="./index.html#games">Games</a></li>
+                    <li><a href="./index.html#community">Community</a></li>
+                    <li><a href="./index.html#contact" class="btn">Contact</a></li>
+                    <li><a href="./index.html#games" class="btn">Book the Game</a></li>
+                    <li><a href="./index.html#" class="btn" onclick="openLoginForm()">Log In</a></li>
+                    <li><a href="./registration.html" class="btn">Sign up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <form action="indexFootieFriends.php" method="post"> 
+     Username: <input type="text" name="uname"> <br>
+     Password: <input type="password" name="passwd"> <br>
+     <input type="submit">
+    </form>
+    
+    <!-- JavaScript -->
+    <script>
+        function openLoginForm() {
+            document.getElementById('loginModal').style.display = 'block';
+        }
+
+        function closeLoginForm() {
+            document.getElementById('loginModal').style.display = 'none';
+        }
+
+        function openSignUpForm() {
+            document.getElementById('signUpModal').style.display = 'block';
+        }
+
+        function closeSignUpForm() {
+            document.getElementById('signUpModal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('loginModal')) {
+                closeLoginForm();
+            }
+            if (event.target == document.getElementById('signUpModal')) {
+                closeSignUpForm();
+            }
+        }
+    </script>
+</body>
+</html>
