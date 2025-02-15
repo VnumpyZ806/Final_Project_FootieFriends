@@ -1,0 +1,389 @@
+Style.css
+
+:root {
+    --primary-color: #6f1d1b;
+    --secondary-color: #bb9457;
+    --text-color: #432818;
+    --background-color: #99582a;
+    --accent-color: #ffe6a7;
+    --about-bg-color: #FFBE86;
+    --games-bg-color: #FFC999;
+    --community-bg-color: #FFC999;
+    --contact-bg-color: #F7A278;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+table, th, tr, td {
+    border: 1px solid;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: var(--primary-color);
+}
+
+.logo {
+    height: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+nav ul li a.btn {
+    background: var(--secondary-color);
+    color: var(--accent-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.hero {
+    background: url('https://i.ibb.co/m56dQw6/Football-Field-Photo.jpg') no-repeat center center/cover;
+    color: var(--accent-color);
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1,h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    margin-bottom: 2rem;
+}
+
+.hero a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.input input {
+    font-family : sans-serif;
+    border-style: ridge;
+    border: 3px;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background: var(--secondary-color);
+    color: var(--accent-color);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.about-section {
+    background: var(--about-bg-color);
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: -10px;
+    position: relative;
+    z-index: 1;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.about-image {
+    width: 30%;
+    max-width: 150px;
+    height: auto;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    max-width: 800px;
+    margin: 1rem auto;
+    color: var(--text-color);
+}
+
+.games-section {
+    background: var(--games-bg-color);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.games-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.games-image {
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    margin: 1rem;
+}
+
+.games-description {
+    width: 45%;
+    max-width: 500px;
+    margin: 1rem;
+    color: var(--text-color);
+}
+
+.video-section {
+    width: 100%;
+    height: 500px;
+    /* overflow: hidden; */
+}
+
+.video-section iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.community-section {
+    background: var(--community-bg-color);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.community-image {
+    width: 30%;
+    max-width: 375px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials {
+    padding: 2rem 1rem;
+    text-align: center;
+    background: var(--primary-color);
+    color: var(--accent-color);
+}
+
+.testimonials h2 {
+    margin-bottom: 1rem;
+}
+
+.testimonial-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background: var(--accent-color);
+    color: var(--text-color);
+    padding: 1rem;
+    margin: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    border-radius: 10px;
+}
+
+.contact-section {
+    background: var(--contact-bg-color);
+    padding: 2rem 1rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.contact-section h2 {
+    margin-bottom: 1rem;
+}
+
+.contact-section a {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+footer {
+    background: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content .social-media a {
+    color: var(--accent-color);
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.footer-content p {
+    margin: 1rem 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*overflow: auto;*/
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #FFC999;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.vertical-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.vertical-form label {
+    font-weight: bold;
+}
+
+.vertical-form input, .vertical-form textarea {
+    padding: 0.5rem;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+.vertical-form button {
+    background-color: #6f1d1b;
+    color: #ffe6a7;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+@media (max-width: /*1000px*/ 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .about-text {
+        width: 90%;
+    }
+
+    .games-content {
+        flex-direction: column;
+    }
+
+    .games-image {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .games-description {
+        width: 90%;
+    }
+
+    .community-image {
+        width: 90%;
+    }
+
+    .testimonial-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        width: 80%;
+    }
+
+    video {
+        width: 100%;
+    }
+}
