@@ -1,62 +1,61 @@
-Login.html
-
-<html>
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FootieFriends - Play Football with Friends</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
+<html> <!-- Declares the HTML document -->
+    <head> <!-- Contains metadata and links to external resources -->
+    <meta charset="UTF-8"> <!-- Sets the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the page is responsive on all devices -->
+    <title>FootieFriends - Play Football with Friends</title> <!-- Sets the title displayed on the browser tab -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Links to the Font Awesome library for icons -->
+    <link rel="stylesheet" href="./style.css"> <!-- Links to an external CSS file for styling the page -->
     </head>
- <body>
-    <header>
-        <div class="header-content">
-            <img src="https://i.ibb.co/CnQDn6N/footiefriends-logo.png" alt="FootieFriends Logo" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="./index.html#about">About Us</a></li>
-                    <li><a href="./index.html#games">Games</a></li>
-                    <li><a href="./index.html#community">Community</a></li>
-                    <li><a href="./index.html#contact" class="btn">Contact</a></li>
-                    <li><a href="./index.html#games" class="btn">Book the Game</a></li>
-                    <li><a href="./index.html#" class="btn" onclick="openLoginForm()">Log In</a></li>
-                    <li><a href="./registration.html" class="btn">Sign up</a></li>
+ <body> <!-- Main content of the webpage begins -->
+    <header> <!-- Website header containing logo and navigation menu -->
+        <div class="header-content"> <!-- Flex container for header content -->
+            <img src="https://i.ibb.co/CnQDn6N/footiefriends-logo.png" alt="FootieFriends Logo" class="logo"> <!-- Displays the website logo with an alternative text -->
+            <nav> <!-- Navigation menu -->
+                <ul> <!-- Unordered list for navigation links -->
+                    <li><a href="./index.html#about">About Us</a></li> <!-- Link to About Us section on the homepage -->
+                    <li><a href="./index.html#games">Games</a></li> <!-- Link to Games section -->
+                    <li><a href="./index.html#community">Community</a></li> <!-- Link to Community section -->
+                    <li><a href="./index.html#contact" class="btn">Contact</a></li> <!-- Contact button linking to the contact section -->
+                    <li><a href="./index.html#games" class="btn">Book the Game</a></li> <!-- Button linking to game booking section -->
+                    <li><a href="./index.html#" class="btn" onclick="openLoginForm()">Log In</a></li> <!-- Log In button triggering the login modal through JavaScript -->
+                    <li><a href="./registration.html" class="btn">Sign up</a></li> <!-- Button linking to the sign-up page -->
                 </ul>
             </nav>
         </div>
     </header>
-    <form action="indexFootieFriends.php" method="post"> 
-     Username: <input type="text" name="uname"> <br>
-     Password: <input type="password" name="passwd"> <br>
-     <input type="submit">
+    <form action="indexFootieFriends.php" method="post"> <!-- Form element to collect login details and submit them to the PHP backend -->
+     Username: <input type="text" name="uname"> <br> <!-- Input field for the username -->
+     Password: <input type="password" name="passwd"> <br> <!-- Input field for the password (hidden characters) -->
+     <input type="submit"> <!-- Submit button to send the form data -->
     </form>
     
     <!-- JavaScript -->
-    <script>
-        function openLoginForm() {
+    <script> <!-- JavaScript code block for modal functionality -->
+        function openLoginForm() { <!-- Function to open the login modal by setting its display to block -->
             document.getElementById('loginModal').style.display = 'block';
         }
 
-        function closeLoginForm() {
+        function closeLoginForm() { <!-- Function to close the login modal by hiding it -->
             document.getElementById('loginModal').style.display = 'none';
         }
 
-        function openSignUpForm() {
+        function openSignUpForm() { <!-- Function to open the sign-up modal -->
             document.getElementById('signUpModal').style.display = 'block';
         }
 
-        function closeSignUpForm() {
+        function closeSignUpForm() { <!-- Function to close the sign-up modal -->
             document.getElementById('signUpModal').style.display = 'none';
         }
 
-        window.onclick = function(event) {
-            if (event.target == document.getElementById('loginModal')) {
+        window.onclick = function(event) { <!-- Adds an event listener to the window object -->
+            if (event.target == document.getElementById('loginModal')) { <!-- Checks if the click is outside the modal, and closes it -->
                 closeLoginForm();
             }
-            if (event.target == document.getElementById('signUpModal')) {
+            if (event.target == document.getElementById('signUpModal')) { <!-- Closes the sign-up modal if the click is outside the modal -->
                 closeSignUpForm();
             }
         }
     </script>
 </body>
 </html>
+
