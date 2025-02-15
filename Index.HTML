@@ -1,206 +1,116 @@
-Index.HTML
-
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Declares the document as HTML5 -->
+<html lang="en"> <!-- Sets the language of the page to English -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FootieFriends - Play Football with Friends. </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 for all characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive to different screen sizes -->
+    <title>FootieFriends - Play Football with Friends. </title> <!-- Title displayed in browser tabs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/.../css/all.min.css"> <!-- Loads Font Awesome icons -->
+    <link rel="stylesheet" href="./style.css"> <!-- Links the external CSS file for page styling -->
 </head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <div class="header-content">
-            <img src="https://i.ibb.co/CnQDn6N/footiefriends-logo.png" alt="FootieFriends Logo" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#games">Games</a></li>
-                    <li><a href="#community">Community</a></li>
-                    <li><a href="#contact" class="btn">Contact</a></li>
-                    <li><a href="#games" class="btn">Book the Game</a></li>
-                    <li><a href="#" class="btn" onclick="openLoginForm()">Log In</a></li>
-                    <li><a href="./registration.html" class="btn">Sign up</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Join FootieFriends and Play Football with Friends</h1>
-            <p>Organize and play football games, we'll handle the rest.</p>
-            <button class="btn-primary"><a href="#games">View All Games</a></button>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="about-content">
-            <img src="https://i.ibb.co/Vmdf5Ts/Football-Image-1.jpg" alt="Football-Image-1" class="about-image">
-            <img src="https://i.ibb.co/pX20HKX/hero-image.jpg" alt="About Us Image Center" class="about-image">
-            <img src="https://i.ibb.co/DfrHZQR/about-right.jpg" alt="About Us Image Right" class="about-image">
-        </div>
-        <div class="about-text">
-            <h2>About Us</h2>
-            <p>FootieFriends is a platform for helping football players play regular football and become friends with one another over time. FootieFriends love catching up with one another.</p>
-            <p>Sign up to be able to see all the available games we host. Not ready to commit - no problem - feel free to just inquire about your game of interest below. We'll handle the rest.</p>
-        </div>
-    </section>
-
-    <!-- Games Section -->
-    <section id="games" class="games-section">
-        <div class="games-content">
-            <img src="https://i.ibb.co/VtybVwx/game-image.jpg" alt="Game Description Image" class="games-image">
-            <div class="games-description">
-                <h2>Games</h2>
-                <p>Canary Wharf: 12pm Casual 6 aside</p>
-                <p>Football</p>
-                <p>Mixed</p>
-                <p>Male</p>
-                <p>Sat Feb 25 2025</p>
-                <p>Hosted by Sportas</p>
-                <p>Description: Come and play in a casual 6 aside game on a Sunday afternoon. It's a beautiful pitch with larger goals. Showers, changing rooms, water fountain and toilets available.</p>
-                <p>Location: The Workhouse (Poplar), 116 Poplar High St, London E14 0AF, UK</p>
-                <p>Rules: Change keeper every 6 minutes, classic 6 aside rules, no slide tackles, play safe, respect everyone on the pitch.</p>
-                <button class="btn-primary" onclick="openSignUpForm()">Inquire</button>
-            </div>
-        </div>
-    </section>
-    
-        <section id="games" class="games-section">
-        <div class="games-content">
-            <img src="https://i.ibb.co/VtybVwx/game-image.jpg" alt="Game Description Image" class="games-image">
-            <div class="games-description">
-                <h2>Games</h2>
-                <p>Canary Wharf: 12pm Casual 6 aside</p>
-                <p>Football</p>
-                <p>Mixed</p>
-                <p>Male</p>
-                <p>Sun Feb 26 2025</p>
-                <p>Hosted by Sportas</p>
-                <p>Description: Come and play in a casual 6 aside game on a Sunday afternoon. It's a beautiful pitch with larger goals. Showers, changing rooms, water fountain and toilets available.</p>
-                <p>Location: The Workhouse (Poplar), 116 Poplar High St, London E14 0AF, UK</p>
-                <p>Rules: Change keeper every 6 minutes, classic 6 aside rules, no slide tackles, play safe, respect everyone on the pitch.</p>
-                <button class="btn-primary" onclick="openSignUpForm()">Inquire</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Video Section -->
-    <section class="video-section">
-        <iframe width="100%" height="500" src="https://www.youtube.com/embed/Q2ad0pFc8lU?autoplay=1&mute=1&loop=1&playlist=Q2ad0pFc8lU" frameborder="0" allow="autoplay; loop;" allowfullscreen></iframe>
-    </section>
-
-    <!-- Community Section -->
-    <section id="community" class="community-section">
-        <img src="https://i.ibb.co/F0j2h6F/community-new.jpg" alt="Community Image" class="community-image">
-        <div class="testimonials">
-            <h2>What Our Customers Say</h2>
-            <div class="testimonial-list">
-                <div class="testimonial">
-                    <p>"Using FootieFriends has been an amazing experience. It's so easy to organize games and catch up with friends."</p>
-                    <strong>- John D.</strong>
-                </div>
-                <div class="testimonial">
-                    <p>"I love how I can find and join football games in my area. Great way to meet new people and stay active."</p>
-                    <strong>- Sarah K.</strong>
-                </div>
-                <div class="testimonial">
-                    <p>"Fantastic platform for football enthusiasts. The community is very welcoming and the games are well organized."</p>
-                    <strong>- Mike L.</strong>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2>Contact</h2>
-        <p>For further inquiries or any questions, please contact Arthur-Vartan at the University of Law</p>
-        <p>Contact number: 077786 09109</p>
-        <p>Email address: <a href="mailto:vartan806@gmail.com">vartan806@gmail.com</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/vartan806" target="_blank">@vartan806</a></p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="social-media">
-                <a href="https://www.facebook.com/UniversityOfLaw" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://x.com/artviz86" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/vartan806" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-            <p>&copy; 2024 FootieFriends. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Log In Modal -->
-    <div id="loginModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeLoginForm()">&times;</span>
-            <form action="indexFootieFriends.php" method="post">
-                <h2>Log In</h2>
-                <label for="uname">Username:</label>
-                <input type="text" id="uname" name="uname" required>
-                <label for="passwd">Password:</label>
-                <input type="password" id="passwd" name="passwd" required>
-                <input type="submit" class="btn-primary" value="Log In">
-            </form>
+<body> <!-- Contains all the visible content of the webpage -->
+<header> <!-- Header section for the website -->
+    <div class="header-content"> <!-- Flexbox container for header items -->
+        <img src="..." alt="FootieFriends Logo" class="logo"> <!-- Displays the website logo -->
+        <nav> <!-- Navigation bar for the website -->
+            <ul> <!-- Unordered list for navigation links -->
+                <li><a href="#about">About Us</a></li> <!-- Link to About Us section -->
+                <li><a href="#games">Games</a></li> <!-- Link to Games section -->
+                <li><a href="#community">Community</a></li> <!-- Link to Community section -->
+                <li><a href="#contact" class="btn">Contact</a></li> <!-- Contact button link -->
+                <li><a href="#games" class="btn">Book the Game</a></li> <!-- Button link for booking a game -->
+                <li><a href="#" class="btn" onclick="openLoginForm()">Log In</a></li> <!-- Button to open login modal using JavaScript -->
+                <li><a href="./registration.html" class="btn">Sign up</a></li> <!-- Button link to registration page -->
+            </ul>
+        </nav>
+    </div>
+</header>
+<section class="hero"> <!-- Hero section with background image and call to action -->
+    <div class="hero-content"> <!-- Container for hero text and button -->
+        <h1>Join FootieFriends and Play Football with Friends</h1> <!-- Main headline -->
+        <p>Organize and play football games, we'll handle the rest.</p> <!-- Subheading text -->
+        <button class="btn-primary"><a href="#games">View All Games</a></button> <!-- Button to view games -->
+    </div>
+</section>
+<section id="about" class="about-section"> <!-- About Us section with images and text -->
+    <div class="about-content"> <!-- Flex container for images -->
+        <img src="..." alt="Football-Image-1" class="about-image"> <!-- About Us image 1 -->
+        <img src="..." alt="About Us Image Center" class="about-image"> <!-- About Us image 2 -->
+        <img src="..." alt="About Us Image Right" class="about-image"> <!-- About Us image 3 -->
+    </div>
+    <div class="about-text"> <!-- Text container for About Us -->
+        <h2>About Us</h2> <!-- Heading for About Us section -->
+        <p>FootieFriends is a platform for helping football players play regular football...</p> <!-- About Us description -->
+    </div>
+</section>
+<section id="games" class="games-section"> <!-- Games section displaying game details -->
+    <div class="games-content"> <!-- Flex container for game image and description -->
+        <img src="..." alt="Game Description Image" class="games-image"> <!-- Game image -->
+        <div class="games-description"> <!-- Game details container -->
+            <h2>Games</h2> <!-- Heading for games section -->
+            <p>Canary Wharf: 12pm Casual 6 aside</p> <!-- Game location and type -->
+            <button class="btn-primary" onclick="openSignUpForm()">Inquire</button> <!-- Button to open sign-up modal -->
         </div>
     </div>
-
-    <!-- Sign Up Modal -->
-    <div id="signUpModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeSignUpForm()">&times;</span>
-            <form class="vertical-form" action="https://formspree.io/f/mrbzqpwj" method="POST">
-                <label for="first-name">First name</label>
-                <input id="first-name" name="first-name" type="text" required>
-                <label for="last-name">Last name</label>
-                <input id="last-name" name="last-name" type="text" required>
-                <label for="email">Your email</label>
-                <input id="email" name="email" type="email" required>
-                <label for="time-availability">Time availability for the game</label>
-                <input id="time-availability" name="time-availability" type="text" required>
-                <label for="date-availability">Date availability for the game</label>
-                <input id="date-availability" name="date-availability" type="date" required>
-                <label for="comments">Comments</label>
-                <textarea id="comments" name="comments" cols="15" rows="5"></textarea>
-                <button type="submit">Submit</button>
-            </form>
+</section>
+<section class="video-section"> <!-- Section for embedded video -->
+    <iframe src="..." frameborder="0" allow="autoplay; loop;" allowfullscreen></iframe> <!-- Embedded YouTube video -->
+</section>
+<section id="community" class="community-section"> <!-- Community section with testimonials -->
+    <img src="..." alt="Community Image" class="community-image"> <!-- Community image -->
+    <div class="testimonials"> <!-- Container for testimonials -->
+        <h2>What Our Customers Say</h2> <!-- Heading for testimonials -->
+        <div class="testimonial-list"> <!-- List of testimonials -->
+            <div class="testimonial"> <!-- Single testimonial block -->
+                <p>"Using FootieFriends has been an amazing experience..."</p> <!-- Testimonial text -->
+                <strong>- John D.</strong> <!-- Testimonial author -->
+            </div>
         </div>
     </div>
-
-    <!-- JavaScript -->
-    <script>
-        function openLoginForm() {
-            document.getElementById('loginModal').style.display = 'block';
-        }
-
-        function closeLoginForm() {
-            document.getElementById('loginModal').style.display = 'none';
-        }
-
-        function openSignUpForm() {
-            document.getElementById('signUpModal').style.display = 'block';
-        }
-
-        function closeSignUpForm() {
-            document.getElementById('signUpModal').style.display = 'none';
-        }
-
-        window.onclick = function(event) {
-            if (event.target == document.getElementById('loginModal')) {
-                closeLoginForm();
-            }
-            if (event.target == document.getElementById('signUpModal')) {
-                closeSignUpForm();
-            }
-        }
-    </script>
+</section>
+<section id="contact" class="contact-section"> <!-- Contact section with information -->
+    <h2>Contact</h2> <!-- Contact section heading -->
+    <p>For further inquiries or any questions, please contact Arthur-Vartan...</p> <!-- Contact details like phone and email -->
+</section>
+<footer> <!-- Footer section with social media and copyright -->
+    <div class="footer-content"> <!-- Container for footer content -->
+        <div class="social-media"> <!-- Social media links -->
+            <a href="..." target="_blank"><i class="fab fa-facebook"></i></a> <!-- Facebook icon link -->
+        </div>
+        <p>&copy; 2024 FootieFriends. All Rights Reserved.</p> <!-- Copyright text -->
+    </div>
+</footer>
+<div id="loginModal" class="modal"> <!-- Modal for user login -->
+    <div class="modal-content"> <!-- Container for modal content -->
+        <span class="close" onclick="closeLoginForm()">&times;</span> <!-- Button to close modal -->
+        <form action="indexFootieFriends.php" method="post"> <!-- Form submission for login -->
+            <h2>Log In</h2> <!-- Login heading -->
+            <label for="uname">Username:</label> <!-- Label for username input -->
+            <input type="text" id="uname" name="uname" required> <!-- Input field for username -->
+            <label for="passwd">Password:</label> <!-- Label for password input -->
+            <input type="password" id="passwd" name="passwd" required> <!-- Input field for password -->
+            <input type="submit" class="btn-primary" value="Log In"> <!-- Submit button for login -->
+        </form>
+    </div>
+</div>
+<div id="signUpModal" class="modal"> <!-- Modal for user sign-up -->
+    <div class="modal-content"> <!-- Container for modal content -->
+        <span class="close" onclick="closeSignUpForm()">&times;</span> <!-- Button to close modal -->
+        <form class="vertical-form" action="https://formspree.io/f/mrbzqpwj" method="POST"> <!-- Form submission for sign-up -->
+            <label for="first-name">First name</label> <!-- Label for first name input -->
+            <input id="first-name" name="first-name" type="text" required> <!-- Input field for first name -->
+            <button type="submit">Submit</button> <!-- Submit button for sign-up -->
+        </form>
+    </div>
+</div>
+<script> <!-- JavaScript for opening and closing modals -->
+    function openLoginForm() { document.getElementById('loginModal').style.display = 'block'; } <!-- Opens login modal -->
+    function closeLoginForm() { document.getElementById('loginModal').style.display = 'none'; } <!-- Closes login modal -->
+    function openSignUpForm() { document.getElementById('signUpModal').style.display = 'block'; } <!-- Opens sign-up modal -->
+    function closeSignUpForm() { document.getElementById('signUpModal').style.display = 'none'; } <!-- Closes sign-up modal -->
+    window.onclick = function(event) { <!-- Adds click event to close modals when clicked outside -->
+        if (event.target == document.getElementById('loginModal')) { closeLoginForm(); }
+        if (event.target == document.getElementById('signUpModal')) { closeSignUpForm(); }
+    }
+</script>
 </body>
 </html>
